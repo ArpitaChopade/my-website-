@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dummy Portfolio</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#317EFB">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background-color:cornflowerblue;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 5px;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .project {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      flex: 1 1 calc(45% - 20px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #4a90e2;
+    }
+    .skills-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .skills-list li {
+      background: #4a90e2;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+    @media (max-width: 600px) {
+      .projects {
+        flex-direction: column;
+      }
+      .project {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Arpita Chopade</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello!I’m Arpita Chopade,a motivated student currently studying Computer Science at Zeal College of Engineering and Research.
+        I’m a first-year student eager to learn and grow in the field of technology. Passionate about coding and problem-solving, 
+        I’m building a strong foundation to develop practical skills and real-world projects.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>As a first-year student, I am actively exploring coding and software development through coursework and personal study. Here are some areas I’m focusing on:</p>
+    <ul>
+      <li>Completed programming exercises in Python and JavaScript.</li>
+      <li>Working on small coding challenges to strengthen problem-solving skills.</li>
+      <li>Planning a simple web app project to apply what I’ve learned.</li>
+    </ul>
+  </section>
+  
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>Problem-solving skills</li>
+      <li>Time management</li>
+      <li>Quick learner</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can contact me at <a href="mailto:arpitachopade@gmail.com">arpitachopade@gmail.com</a> or follow me on <a href="https://linkedin.com/in/arpitachopade" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Arpita Chopade. All rights reserved.
+  </footer>
+</body>
+</html>

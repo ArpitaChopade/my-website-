@@ -1,0 +1,23 @@
+{
+    "name": "My Awesome Website",
+    "short_name": "AwesomeSite",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#317EFB",
+    "icons": [
+      {
+        "src":"logo.svg",
+        "sizes": "192x192",
+        "type": "image/svg"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Open Home",
+        "url": "/index.html",
+        "icons": [{ "src": "logo.svg", "sizes": "96x96" }]
+      }
+    ]
+  }
+  
