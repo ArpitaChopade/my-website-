@@ -1,6 +1,6 @@
 const CACHE_NAME = 'my-pwa-cache-v1';
 const urlsToCache = [
-  '/my-website-/',            // root page
+  '/my-website-/',
   '/my-website-/index.html',
   '/my-website-/manifest.json',
   '/my-website-/style.css',
@@ -10,11 +10,15 @@ const urlsToCache = [
 
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll(urlsToCache);
-    }).catch(err => {
-      console.error('Cache addAll failed:', err);
-    })
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(urlsToCache))
+      .then(() => self.skipWaiting()) // Activate new SW immediately
+  );
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    clients.claim()  // Take control of all pages immediately
   );
 });
 
