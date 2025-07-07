@@ -6,6 +6,8 @@ const urlsToCache = [
   '/my-website-/styles.css',
   '/my-website-/app.js',
   '/my-website-/logo.svg',
+  '/my-website-/blob/main/sw.js',
+  '/my-website-/blob/main/main.js',
 ];
 
 self.addEventListener('install', event => {
