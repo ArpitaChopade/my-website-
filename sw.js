@@ -1,11 +1,11 @@
 const CACHE_NAME = 'my-pwa-cache-v1';
 const urlsToCache = [
   '/my-website-/',
-  '/my-website-/index.html',
-  '/my-website-/manifest.json',
-  '/my-website-/styles.css',
-  '/my-website-/app.js',
-  '/my-website-/logo.svg',
+  '/my-website-/blob/main/index.html',
+  '/my-website-/blob/main/manifest.json',
+  '/my-website-/blob/main/styles.css',
+  '/my-website-/blob/main/app.js',
+  '/my-website-/blob/main/logo.svg',
   '/my-website-/blob/main/sw.js',
   '/my-website-/blob/main/main.js',
 ];
