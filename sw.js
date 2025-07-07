@@ -1,12 +1,11 @@
 const CACHE_NAME = 'my-pwa-cache-v1';
 const urlsToCache = [
+  '/my-website-/',            // root page
   '/my-website-/index.html',
   '/my-website-/manifest.json',
-  '/my-website-/styles.css',
+  '/my-website-/style.css',
   '/my-website-/app.js',
-  '/my-website-/logo.svg',
-  '/my-website-/sw.js',
-  '/my-website-/main.js'
+  '/my-website-/logo.svg'
 ];
 
 self.addEventListener('install', event => {
@@ -19,8 +18,8 @@ self.addEventListener('install', event => {
 
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(response => {
-      return response || fetch(event.request);
+    caches.match(event.request).then(resp => {
+      return resp || fetch(event.request);
     })
   );
 });
