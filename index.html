@@ -142,5 +142,19 @@
   <footer>
     &copy; 2025 Arpita Chopade. All rights reserved.
   </footer>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/my-website-/sw.js')
+        .then(registration => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    });
+  }
+</script>
+<script src="/my-website-/app.js"></script>
 </body>
 </html>
