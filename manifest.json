@@ -1,7 +1,7 @@
 {
   "name": "My Website",
   "short_name": "Website",
-  "start_url": "/",
+  "start_url": "/my-website-/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#3367D6",
